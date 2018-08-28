@@ -26,11 +26,19 @@
 
         .hand {
             position: absolute;
-            top: 0;
+            top: 5%;
             left: calc(50% - 4px);
             width: 8px;
-            height: 50%;
+            height: 45%;
             background-color: gold;
+            transform: rotate(0deg);
+            transform-origin: 50% 100%;
+            border-radius: 10% 50% 10% 50%;
+            transition: 15s steps(60);
+        }
+
+        .clock:hover .hand {
+            transform: rotate(360deg);
         }
     </style>
 </head>
